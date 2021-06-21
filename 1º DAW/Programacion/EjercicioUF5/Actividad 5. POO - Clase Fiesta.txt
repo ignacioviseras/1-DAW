@@ -1,0 +1,33 @@
+Enunciado 
+
+Esta práctica consiste en la elaboración de dos proyectos Eclipse que deberás realizar siguiendo estas pautas:
+
+Debes crear un proyecto eclipse con el nombre EjercicioUF5-01 atendiendo a las especificaciones que se indican en este documento (Especificaciones para versión 1).
+Una vez terminado el anterior proyecto, haz una copia y realiza las mejoras cuyas especificaciones se indican en este documento (Especificaciones para versión 2).
+Empaqueta los dos proyecto en un archivo .zip que entregarás a tu tutor.
+
+Especificaciones para la versión 1:
+
+	1.El proyecto contará con una clase llamada Fiesta con la siguiente estructura:
+		foto_1.jpg
+
+	2.Todas las propiedades serán privadas y accesibles mediante métodos get/set.
+	3.La propiedad tipo indica el tipo de fiesta: infantil, cumpleaños, disfraces, etc.
+	4.La propiedad bocadillos contiene la cantidad de bocadillos que se comprarán para la fiesta. Lo mismo con las bebidas.
+	5.El ejercicio propone almacenar la fechaHora como String por simplificar el código. Si tienes ganas de investigar puedes probar a guardarlo como un objeto de la clase LocalDateTime.
+	6.Se creará un constructor, que recibirá por medio de parámetros el tipo, fechaHora, direccion, bebidas y bocadillos. A la propiedad invitados se le asignará el valor 0 directamente.
+	7.Se creará otro constructor que no reciba ningún parámetro. Asigna a cada propiedad valores inventados.
+	8.El método consultar() retornará una cadena con todos los datos de la fiesta.
+	9.El método invitar() sumará 1 al contador de invitados.
+	10.El método cancelarInvitación() restará 1 al contador de invitados.
+	11.El método precioFiesta() retornará el precio de la fiesta calculado de la siguiente forma: 5 euros por cada invitado, 2 euros por cada bebida y 3 euros por cada bocadillo.
+
+	Crea una clase Principal (con método main) donde crearás varios objetos de la clase Fiesta utilizando varios constructores distintos.
+	Pon en práctica todos los métodos que has creado (invitar, consultar, cancelarInvitación y precioFiesta).
+
+Especificaciones para la versión 2:
+
+	1.Crea un atributo estático llamado contadorFiestas, cuyo valor se incrementará en una unidad cada vez que se construya un nuevo objeto Fiesta.
+	2.Sitúa la clase Fiesta en el paquete com.itt.fiestas.
+	3.Sobrecarga el método invitar para que el usuario pueda realizar más de una invitación al mismo tiempo indicando el número de invitados como argumento.
+	4.Modifica la clase Principal de modo que puedas poner en práctica los cambios introducidos en esta versión 2.
