@@ -1,0 +1,13 @@
+Enunciado
+
+Buscar alguna persona que tenga un negocio, que tenga informatizado el negocio o no y pídele que sea tu cliente y realiza las siguientes tareas de análisis:
+
+	-Entrevístale, si es necesario graba la entrevista e intenta extraer una lista de requisitos. 
+	-Extrae de esta lista de requisitos los que versen sobre almacenamiento de la información en bases de datos y realiza un diagrama entidad relación que satisfaga todos esos requisitos. 
+	-Reúnete de nuevo con el cliente y pídele que verifique tu modelo E-R.
+	-Repite este proceso hasta que el cliente dé el visto bueno.
+
+Nota: Si tuvierais problemas para contactar con algún empresario que se preste al ejercicio, podéis trabajar con una posible empresa ficticia, pero lo ideal es poder trabajar en un entorno real.
+
+Tarea entregada
+	Nota: 70

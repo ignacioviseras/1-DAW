@@ -1,0 +1,14 @@
+Enunciado
+
+Seguimos trabajando con la base de datos creada en la unidad anterior.
+	foto_1
+
+Se pide que sobre esa base de datos realices las siguientes tareas:
+
+	1.Cambiar el nombre de la tabla departamentos por dept.
+	2.Añadir una nueva columna a la tabla HRJOBS que sea Skills, para saber qué habilidades tiene el empleado y será de tipo cadena.
+	3.Cambiar el tamaño del campo country_id de HRLOCATIONS por un tamaño de 50.
+	4.Añadir la restricción de no permitir salario menor de 0 en la tabla HREMPLOYEES en el campo salary.
+	5.Añadir la restricción de NOT NULL en campo department_name de la tabla HR_DEPARTAMENTS.
+	6.Crear otra vista llamada sueldos_suma que muestre los nombres de los departamentos y la suma de los sueldos de los empleados masculinos agrupados por departamentos.
+	7.Inserta un nuevo departamento, deshaciendo la entrada del nuevo departamento después, usando transacciones.

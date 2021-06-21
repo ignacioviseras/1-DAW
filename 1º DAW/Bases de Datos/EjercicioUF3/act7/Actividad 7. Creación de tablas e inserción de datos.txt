@@ -1,0 +1,77 @@
+Apartado 1
+
+Para la realización de este ejercicio es necesario la instalación de un SGBD.
+
+Se propone instalar los siguientes SGBD y que vamos a utilizar a lo largo del módulo.
+
+	Oracle Database 11g Express Edition
+	Mysql
+Para la instalación de los dos SGBD se deben seguir los pasos indicados en los Anexos correspondientes a las instalaciones:
+
+	Anexo 1: Instalación de Mysql
+	Anexo 2: Instalación de Oracle Database 11g Express Edition
+	Anexo 3: Manual MySql WorkBench
+	Anexo 4: Sql Developer
+Para trabajar con Oracle se dispone del entorno gráfico Sqldeveloper y para Mysql tenemos MysqlWorkbench.
+
+La instalación de ambos entornos gráficos también es necesario y en los anexos se detalla cómo realizar su instalación.  
+
+Apartado 2
+
+Una vez que hayamos instalado el SGBD, se va a trabajar con la creación de una base de datos con las siguientes características:
+
+Enunciado
+
+Necesitamos crear una base de datos que va a contener información acerca de proyectos que se llevan en una empresa. Es necesario almacenar información de:
+
+	Empleados. 
+	Departamentos. 
+	Proyectos. 
+	Proyectos asignados. 
+
+	Para ello se pide crear las siguientes tablas:
+		Empleados. 
+		Departamentos. 
+		Proyectos. 
+		Asignación. 
+con los siguientes campos:
+foto_1
+
+Para cada una de las tablas debes de:
+	Elegir el tipo de datos más adecuado según la información a almacenar.
+	Clave primaria. 
+	Clave foránea si la tuviera. 
+	Si se elimina un departamento asignar NULL al empleado que lo tuviera asignado.
+
+Además para ciertas tablas se pide también las siguientes características:
+	El presupuesto del Departamento no puede ser menor de 5000 Euros.
+	Crear un índice sobre el campo Nombre de la tabla departamentos. 
+	El valor por defecto del campo Nombre de la tabla proyectos será “INDEF”.
+	El campo Nombre de la tabla proyectos debe de ser único.
+	El sueldo el empleado no puede ser inferior a 1000 Euros.
+	El presupuesto del departamento no puede estar vacío.
+
+Luego es necesario que insertes en la base de datos la siguiente información, usando sentencias sql.
+
+TABLA EMPLEADOS
+
+TABLA DEPARTAMENTOS
+
+TABLA PROYECTOS
+
+TABLA ASIGNACIÓN
+
+
+Para realizar esta práctica puedes utilizar Mysql u Oracle instalados en el apartado 1 y que te permite introducir comandos SQL y comprobar sus efectos.
+
+Para crear una nueva base de datos no introduzcas una sentencia SQL, utiliza las facilidades de la interfaz gráfica. Escribe el nombre y las opciones que desees, asegúrate que sea pública para no tener problemas con los permisos.
+
+Metodología
+	-El alumno deberá repasar los conceptos de creación de tablas, inserción y modificación de datos explicados en la teoría.
+	-En el caso de haber instalado un SGBD se deberá encontrar la opción para introducir los comandos SQL.
+	-Se creará la base de datos y las tablas con los campos mencionados en el enunciado. El alumno deberá elegir cuál es el mejor tipo de dato para cada campo y cuáles serán las claves primarias y foráneas de cada tabla. Deberá también reflexionar sobre los modificadores de cada columna como son (NOT NULL, UNIQUE, etc.).
+	-Especial atención deberá tener el alumno al crear bases de datos pues no en todos los SGBD se realiza igual. Para no tener problemas en este punto se permite al alumno introducir las bases de datos apoyándose en la interfaz gráfica.
+	-Una vez creada la base de datos el alumno introducirá las sentencias en función de los datos aportados por el enunciado.
+	-Comprobará los errores que pueda haber y aplicará con la sentencia UPDATE las modificaciones oportunas.
+	-Será recomendable que para cada sentencia introducida comprobar si el resultado es el esperado apoyándose para ello en la interfaz gráfica.
+	-Finalmente, también es recomendable que el alumno vaya copiando en un documento todas las sentencias aplicadas, para elaborar posteriormente un documento que subirá a la plataforma.

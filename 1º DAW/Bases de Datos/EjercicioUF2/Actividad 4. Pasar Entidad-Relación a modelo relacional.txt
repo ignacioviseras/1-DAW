@@ -1,0 +1,10 @@
+Enunciado
+
+Acabas de empezar tu colección de películas y quieres hacer una base de datos para construir su ficha técnica. De cada película, necesitas su título, año, nacionalidad y algunos datos de su director: el nombre, la fecha denacimiento y su país de origen. Además, quieres saber su idioma, si es en blanco y negro o en color, si tiene alguna restricción de edad, un resumen y poder poner tus propias observaciones.
+La ficha técnica de cada película también debe incluir el reparto de actores, donde aparecerá su nombre, su nacionalidad y el nombre del personaje que tiene en la película.
+El diagrama E/R que modela el problema es el siguiente:
+	foto_1
+Se pide:
+
+Pasar el diagrama E/R al modelo relacional identificando tablas y claves primarias y foráneas. Mejora si es necesario añadir alguna clave extra para que el diagrama E/R sea más correcto.
+El modelo relacional obtenido debe de cumplir las tres primeras formas normales.

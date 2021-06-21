@@ -1,0 +1,19 @@
+Nota 5/10 Falta e diccionario de datos  y el DER es mejorable
+
+Enunciado
+ 
+Tenemos una tienda donde se venden una serie de productos y necesitamos almacenar datos de las facturas que se emiten. El funcionamiento principal del modelo es el siguiente.
+ 
+	• En cada venta se pueden vender varios productos y se emite una factura. 
+	• De las facturas necesitamos el DNI y nombre del cliente, la fecha, el importe y el número de factura que identificará a la factura de forma única. 
+	• Relacionado con la factura que emitimos en nuestra tienda es necesario almacenar los productos que se han comprado y se han incluido en esa factura, o sea, las líneas de factura. 
+	• Necesitamos saber el código de cada producto, el nombre del producto, el importe y la cantidad de artículos de ese producto.
+ 
+Se pide:
+ 
+	• Crear el modelo E/R con las entidades y atributos correspondientes
+	• Identificar el atributo clave de cada entidad
+	• Indicar el dominio de cada uno de los atributos
+	• Identificar de qué tipo es cada uno de los atributos de las entidades ( derivado, compuesto, ..... )
+	• Crear las relaciones oportunas
+	• Poner la cardinalidad a las relaciones

@@ -1,0 +1,26 @@
+Enunciado
+
+Una vez que hemos generado nuestra base de datos, vamos a seguir practicando con el lenguaje SQL. Para ello se pide que realices las siguientes sentencias SQL.
+
+	1.Se pide que muestres todos los datos introducidos en las tablas. Para ello deberías extraer las cuatro tablas incluidas con comandos de selección.
+	2.Se necesita una lista de los proyectos (sólo indicando el nombre y la fecha de inicio) que empiezan a partir de Marzo. En la cabecera de la columna de la fecha debe de poner “Fecha de inicio del proyecto”.
+	3.Se necesita un listado de todos los empleados que tengan el apellido López, como primero o segundo apellido
+	4.Se pide que muestres el nombre del proyecto que tiene asignado el empleado “10480”, siguiendo estos pasos.
+		4.1.Son dos sentencias SELECT: Primero averigua el número de de proyecto del empleado “10480” y luego cuando tengas el número de proyecto realizar la consulta sobre la tabla Proyectos.
+	5.Sacar un listado de los empleados que sean de Madrid o Córdoba. Realiza el select de dos maneras posibles.
+	6.Sacar un listado de los empleados que tengan un sueldo entre 1300 y 1550 Euros  
+	7.Ordena los empleados por fecha de nacimiento descendente y sólo los que hayan nacido después de 1976.
+	8.Se ha detectado un error y es necesario sumar 5000 Euros al presupuesto del departamento de Marketing. Modifícalo sin tener que volver a insertar de nuevo el registro.
+	9.Se va a cambiar de proyecto a “Alberto Pérez López”. Modifícalo para que tenga asignado el proyecto “RUNTA”.
+	10.Por motivos de logística “Antonio García Montero” ya no seguirá en el proyecto que tenía asignado y por lo tanto hay que quitarle esa asignación. Hazlo en dos pasos al igual que en la consulta 4.
+	11.Sacar todos los empleados del departamento de Diseño y que ganen más de 1500 Euros.
+	12.Incrementar en un 5% el sueldo de los empleados que pertenezcan al departamento de I+D y que ganen menos de 1400 Euros. 
+
+Una vez elaborado todas las sentencias súbelo a la plataforma para su evaluación.
+
+Metodología
+
+	-El alumno deberá estudiar los conceptos de las sentencias de SQL de selección y filtrado, elaboración de subconsultas, y funciones de manipulación de los datos.
+	-Se irán realizando los ejercicios consecutivamente, ya que el orden de dificultad ira creciendo. Todos los ejercicios se refieren a la utilización de la sentencia SELECT con sus diferentes variantes y funciones para filtrar los datos.
+	-Será recomendable que para cada sentencia introducida comprobar si el resultado es el esperado apoyándose para ello en la interfaz gráfica.
+	-Es recomendable que el alumno copie en un documento todas las sentencias que vaya ejecutando para elaborar posteriormente un documento que enviará al tutor para su evaluación.

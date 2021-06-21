@@ -1,0 +1,10 @@
+Enunciado
+Usando la misma base de datos de la actividad anterior:
+	foto_1
+
+Crea un trigger que inserte un registro en una tabla nueva llamada EMP_AUDIT cada vez que modificamos el salario de un empleado. Sólo se realizará la operación si el salario que se va a modificar difiere del nuevo.
+
+La tabla EMP_AUDIT tendrá los siguientes campos:
+	-Identificador del empleado que se está actualizando.
+	-El momento en que se hace la actualización.
+	-Un mensaje que contenga el salario anterior y el nuevo.
