@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;/*hacemos q ocupe toda la pantalal el*/
+}
+body{
+    width: 90%;
+    margin: auto;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: medium;
+    min-height: 100%;/*decimmos q el minimo sea ese para q ocupe todo*/
+}
+
+.container > *{/*el > * es para que se aplique a todos los elemntos 
+    del contenedor ya que si no lo tenemos quedaria con una sola linea*/
+    box-shadow: -1px 1px 7px 0px;/*lineas de las cajas*/
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.container{
+    background: #ccc;
+    display: grid;
+    gap: 10px;/*separacion de los elementos de cada caja*/
+    grid-template-rows: 80px 50px auto auto 100px;
+    grid-template-areas: /*manera facil de colocar todos los grid si quiero que article 
+    este por encima de nav solo tendria que colocarlo de la siguiente manera*/
+        "header"
+        "nav"/*"article"*/
+        "article"/*"nav"*/
+        "aside"
+        "footer";
+}
+
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+.article{
+    grid-area: article;
+}
+.aside{
+    grid-area: aside;
+}
+.footer{
+    grid-area: footer;
+}
+
+.header{
+    background: #205283;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;/*centramos verticalmente*/
+    flex-direction: row;
+    
+}
+.header .logo{
+    text-align: center;
+    line-height: 70px;/*centramos el texto con la foto*/
+    padding-left: 3%;
+}
+.title{
+    color:rgb(255, 255, 255);
+    padding-left: 10%;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+header .logo img{
+    width: 80px;
+    vertical-align: top;/*lo alineamos con verticalmente*/
+}
+
+nav{
+    background: white;
+    display: flex;
+    align-items: center;
+}
+.nav{
+    width: 100%;
+    padding-left: 15%;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+    background-color: rgb(137, 199, 201);
+    padding: 5px;
+}
+
+nav a:hover{
+    background-color: rgb(87, 198, 202);
+}
+
+.article{
+    background: white;
+    padding: 5%;
+}
+h3{
+    padding-bottom: 5px;
+}
+.aside{
+    background: white;
+    padding: 5%;
+}
+
+
+footer{
+    background: #205283;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;/*separa los elementos que no son del mismo bloque*/
+}
+footer .links{
+    background: #24d61e;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .links a{
+    flex-grow: 1;
+    color: #fff;  
+    text-align: center;
+    text-decoration: none;
+ }
+ .links{
+    margin-left: 50px;
+ }
+ footer a:hover{/*con esto lo que hacemos es que cuando pasemos el raton se ilumine la casilla*/
+    background-color: #52d61e;
+}
+footer .social{
+    background: #22dfe6;
+}
+footer .social a{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 10px;
+    display: inline-block;/*lo ponemos para que el texto se aline*/
+    
+}
+.social{
+    margin-top: 10px;
+    margin-left: 150px;
+}
+.enlaces{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+footer .social a:hover{/*con esto lo que hacemos es que cuando pasemos el raton se ilumine la casilla*/
+    background-color: #22c9e6;
+}
+@media (min-width: 855px){
+    .container{
+        grid-template-columns: 60% auto;/*decimos el cancho de las columnas*/
+        grid-template-rows: 100px 50px auto 80px;/*decimos el alto de las columnas*/
+        grid-template-areas: /*lo cambiamos de esta manera y asi optenemos 
+        una distribucion mas limpia para este formato*/
+            "header header"
+            "nav nav"
+            "article aside"
+            "footer footer";
+    }
+   .title{
+    padding-left: 25%;
+   }
+   .nav{
+    padding-left: 30%;
+}
+footer{
+    justify-content: space-around;
+    align-items: center;
+}
+.links{
+    margin: 0%;
+    padding: 5px;
+}
+.social{
+    margin-top: 0;
+    margin-left: 0;
+    padding: 10px;
+}
+}
+
+@media (min-width: 900px){
+    .container{
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 120px 80px auto 60px;
+    grid-template-areas:
+        "header header"
+        "nav nav "
+        "article  aside"
+        "footer footer ";
+    }
+    .title{
+        padding-left: 37%;
+    }
+    .nav{
+        padding-left: 42%;
+    }
+    aside{
+        flex:0 0 300px;/*y basicamente ponemos que no cambie el tamaño (ni crece ni mengua)del bloque ya que si ponemos fotos pues se veria mas pequeñas*/
+        display: flex;
+        flex-wrap: wrap;/*si no entra uno lo pasas abajo del otro*/
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 5px;
+    }
+    aside .widget{
+        /*background: #d35400;*/
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    aside img{
+        height: 160px;
+    }
+}
